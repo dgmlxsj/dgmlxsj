@@ -1,0 +1,13 @@
+def on_clipboard_text_changed
+	previous_clipboard_text=nil
+	current_clipboard_text=nil
+	while true
+		if previous_clipboard_text!=current_clipboard_text 
+			yield current_clipboard_text
+		end
+		previous_clipboard_text=current_clipboard_text
+		current_clipboard_text=get_clipboard_text
+		sleep 0.5
+	end
+
+end

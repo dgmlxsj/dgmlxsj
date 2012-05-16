@@ -1,0 +1,5 @@
+require 'win32/clipboard'
+include Win32
+def get_clipboard_text()
+	`clipboard.exe`
+end

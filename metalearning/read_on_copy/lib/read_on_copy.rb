@@ -1,0 +1,9 @@
+require 'win32/sapi5'
+require "read_on_copy/version"
+require 'read_on_copy/clipboard'
+require 'read_on_copy/clipboard_listener'
+require 'read_on_copy/filter'
+require 'read_on_copy/reader'
+module ReadOnCopy
+  # Your code goes here...
+end
